@@ -19,7 +19,7 @@ Pasos para poner en marcha el proyecto:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone <URL_DE_TU_REPOSITORIO_GITHUB>
+    git clone https://github.com/Gaby46Pe/PR-PFO2-GAP.git
     cd pfo2-tareas
     ```
 
@@ -36,10 +36,10 @@ Pasos para poner en marcha el proyecto:
     ```bash
     pip install -r requirements.txt
     ```
-    (Si no tienes `requirements.txt`, ejecutas `pip install Flask Flask-SQLAlchemy Werkzeug Flask-JWT-Extended requests` y luego `pip freeze > requirements.txt`).
+    (Si no tiene `requirements.txt`, ejecutar `pip install Flask Flask-SQLAlchemy Werkzeug Flask-JWT-Extended requests` y luego `pip freeze > requirements.txt`).
 
 4.  **Ejecutar el Servidor Flask:**
-    Abre una terminal, activa el entorno virtual (si no lo hiciste) y ejecuta:
+    Abrir una terminal, activar el entorno virtual (si no lo hiciste) y ejecutar:
     ```bash
     python servidor.py
     ```
