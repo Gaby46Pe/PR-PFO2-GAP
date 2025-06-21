@@ -56,8 +56,17 @@ def login():
         return jsonify({"mensaje": "Credenciales inválidas"}), 401 # Unauthorized
 
 # 3. Gestión de Tareas (Endpoint protegido)
-@app.route('/tareas', methods=['GET'])
+@app.route('/tareas', methods=['GET', 'POST'])
 @jwt_required() # Protege este endpoint, requiere un JWT válido
+def crear_tarea():
+    data = request.get_json()
+    if not data or not data.get('titulo'):
+        return jsonify({"mensaje": "Falta el título de la tarea"}), 400
+    nueva_tarea = Tarea(titulo=data['titulo'], usuario_id=get_jwt_identity())
+    db.session.add(nueva_tarea)
+    db.session.commit()
+    return jsonify({"mensaje": "Tarea creada"}), 201
+
 def tareas():
     current_user = get_jwt_identity() # Obtiene la identidad del token JWT
     # En un proyecto real, aquí iría la lógica para listar o gestionar tareas.

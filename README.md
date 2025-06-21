@@ -39,18 +39,18 @@ Pasos para poner en marcha el proyecto:
     (Si no tiene `requirements.txt`, ejecutar `pip install Flask Flask-SQLAlchemy Werkzeug Flask-JWT-Extended requests` y luego `pip freeze > requirements.txt`).
 
 4.  **Ejecutar el Servidor Flask:**
-    Abrir una terminal, activar el entorno virtual (si no lo hiciste) y ejecutar:
+    Abrir una terminal, activar el entorno virtual (si no se hizo) y ejecutar:
     ```bash
     python servidor.py
     ```
-    El servidor se iniciará en `http://127.0.0.1:5000`. Verás un archivo `tareas.db` aparecer en el directorio del proyecto.
+    El servidor se iniciará en `http://127.0.0.1:5000`. se Verá un archivo `tareas.db` aparecer en el directorio del proyecto.
 
 5.  **Ejecutar el Cliente en Consola:**
-Abre **otra terminal diferente**, activa el entorno virtual y ejecuta:
+Abrir **otra terminal diferente**, activar el entorno virtual y ejecuta:
     ```bash
     python cliente.py
     ```
-    Sigue el menú para registrar un usuario, iniciar sesión y acceder a las tareas.
+    Seguir el menú para registrar un usuario, iniciar sesión y acceder a las tareas.
 
 ## Endpoints de la API
 
