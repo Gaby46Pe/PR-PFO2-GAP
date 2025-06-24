@@ -156,8 +156,4 @@ def eliminar_tarea(task_id):
     return jsonify({"mensaje": "Tarea eliminada"}), 200
 
 if __name__ == '__main__':
-    # Para desarrollo, puedes eliminar la base de datos al iniciar (NO en producción)
-    # if os.path.exists('tareas.db'):
-    #     os.remove('tareas.db')
-    #     print("Base de datos eliminada para reinicio.")
-    app.run(debug=True)
+     app.run(debug=True)
